@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang=en>
+
+<head>
+    <meta charset=utf-8>
+    <meta name=viewport content="width=device-width,initial-scale=1">
+    <meta http-equiv=x-ua-compatible content="ie=edge">
+    <link rel=icon href=../../fav3.jpeg type=image/gif>
+    <script
+        type=application/javascript>var doNotTrack=false;if(!doNotTrack){(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');ga('create','UA-167646412-8','auto');ga('send','pageview');}</script>
+    <link rel=stylesheet href=../../css/bootstrap.min.css media=all>
+    <link rel=stylesheet href=../../css/all.min.css media=all>
+    <link rel=stylesheet href=../../css/fontawesome.min.css media=all>
+    <link rel=stylesheet href=../../css/v3/darkmode.css media=all>
+    <style>
+        html {
+            scrollbar-width: thin;
+            scrollbar-color: #6c757d transparent
+        }
+
+        ::-webkit-scrollbar {
+            width: 5px
+        }
+
+        ::-webkit-scrollbar-track {
+            background: 0 0
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #6c757d
+        }
+    </style>
+    <link rel=stylesheet href=../../css/v3/navbar-footer.css>
+    <link rel=preconnect href=https://fonts.gstatic.com>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap"
+        rel=stylesheet>
+    <script src=../../js/popper.min.js></script>
+    <meta name=description content="Description of project">
+    <title>Dot-Bot</title>
+    <link href=../../css/v3/post.css rel=stylesheet>
+</head>
+
+<body class=text-dark>
+    <script src=../../js/jquery.slim.min.js></script>
+    <script src=../../js/bootstrap.min.js></script>
+    <div class=container>
+        <div>
+        <nav class="pt-3 navbar navbar-expand-lg navbar-light" data-aos=fade-down data-aos-easing=linear
+            data-aos-duration=500><a class=navbar-brand href=../.. /><img src=../../fav3.jpeg width=30 height=30
+                class="d-inline-block align-top">
+            harshmahesheka</a>
+            <button class="navbar-toggler border-0" type=button data-toggle=collapse data-target=#navbarNavDropdown
+                aria-controls=navbarNavDropdown aria-expanded=false aria-label="Toggle navigation">
+                <span class=navbar-toggler-icon></span></button>
+            <div class="collapse navbar-collapse" id=navbarNavDropdown>
+                <ul class="navbar-nav ml-auto text-center">
+                    <li class="nav-item navbar-text"><a class="nav-link text-dark" href=../../#about
+                            aria-label=about>About</a></li>
+                    <li class="nav-item navbar-text"><a class="nav-link text-dark" href=../../#Interests
+                            aria-label=Interests>Interests</a></li>
+                    <li class="nav-item navbar-text"><a class="nav-link text-dark" href=../../#education
+                            aria-label=education>Education</a></li>
+                    <li class="nav-item navbar-text"><a class="nav-link text-dark" href=../../#projects
+                            aria-label=projects>Projects</a></li>
+                    <li class="nav-item navbar-text"><a class="nav-link text-dark" href=../../#contact
+                            aria-label=contact>Contact</a></li>
+                 </ul>
+            </div>   
+        </nav> 
+    </div>
+        <div styel="align=center">
+            <div class="article-container pt-3">
+                <h1>Mini Swarm Bot</h1>
+              
+                
+              
+                
+              
+              
+              <div class="article-metadata">
+              
+                
+                
+              
+                
+                <span class="article-date">
+                  
+                  
+                    
+                  
+                  Aug 1, 2021
+                </span>
+                
+              
+                
+              
+                
+              
+                
+                
+                
+                
+                
+              
+                
+                
+              
+              </div>
+              
+                
+              
+              
+              
+              
+              <div class="btn-links mb-3">
+                
+                
+              
+              
+              
+              
+              
+              
+              
+              
+                
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+                
+                
+                
+                  
+                
+                
+                
+                
+                
+                  
+                
+                <a class="btn btn-outline-primary btn-page-header" href="https://github.com/Robotics-Club-IIT-BHU/Dot-Bot" target="_blank" rel="noopener">
+                  <i class="fab fa-github mr-1"></i>
+                  Code and Details
+                </a>
+              
+              
+              </div>
+              
+              
+              </div>
+              
+              
+              <div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px; max-height: 837px;">
+                <div style="position: relative">
+                  <p style="text-align:left;"><img style="width:600px;height:700px;" src="swarm.png" alt="" class="featured-image"></p>
+                  <p style="text-align:center;"> <span class="article-header-caption">Dot-Bot</span></p>
+                </div>
+              </div>
+              
+              
+              
+                <div class="article-container">
+              
+                  <div class="article-style">
+                    <p>This is fully ROS integrated robot, which can be used in various purposes our main use case was to test out multiagent algorithms. We used it to take part in the national level competition, FlipKart Grid 3.0 Robotics challenge 2021.</p>
+              <p>We worked on building the platform and the integrating ROS with the following robot. The localization was done using a Apriltag_ros and a array of cameras. Also worked on implementing autonomously navigating in the environment and computing the optimal path while considering other robots in the arena.</p>
+              <p>The complete package including the controller and the planner can be found at <a href="https://github.com/Robotics-Club-IIT-BHU/Dot-Bot" target="_blank" rel="noopener">Dot-Bot</a>.</p>
+              <h2 id="robot-control">Robot control</h2>
+              <p>The robots control architecture is a state-of-the-art implementation using a microprocessor and a microcontroller along with sensor fusion for position estimation with external cameras for deteciton of apriltags that denote the robot.</p>
+              <p>The exact control architecture is briefly given in the below image which later is elaborated in 3 bulletin points</p>
+              <p><img src="dotbot_control.png" alt=""></p>
+              <ul>
+              <li>Communication: Communication between the robot and the remote PC is done through <a href="http://wiki.ros.org/ROS/Tutorials/MultipleMachines" target="_blank" rel="noopener">Networking of multiple machines</a>. The communication between the microprocessor and the Microcontroller is done through UART at a baudrate of 2000000.</li>
+              <li>Pose Estimation: Pose estimation is done through using Encoder and Imu fusion for odometry(i.e., odom to base frame). Then we use and external camera for ground truth (i.e., map to base frame).</li>
+              <li>Controller: We have used a simple velocity based 3 wheel omni drive to control the robot. The omni drive node works at 100 hz on the raspberrypi and the micro controller controls individual motors to trace the given velocity this made it very easy to transfer from the simulation to real world.</li>
+              </ul>
+              <p>The whole implementation of the control architecture can be found at <a href="https://github.com/Robotics-Club-IIT-BHU/Swarm-Bot-Hardware" target="_blank" rel="noopener">Swarm-bot-hardware</a>.</p>
+              <h2 id="simulation">Simulation</h2>
+              <p>We have setup the whole simulation for these robots as we have modelled the real robot. We have also added the 2DOF droppers that can be seen on top of each robot.</p>
+              <p>We have setup Rviz to visualize the robots both in simulation and hardware.
+                <p style="text-align:center;">
+              <img style="width:600px;height:600px;" src="gazebo.png" alt="Dot-Bot" class="center"></p></p>
+              <p align="center">
+              <i>An demo of the robot in gazebo</i>
+              </p>
+              <h2 id="flipkart-grid-challenge">Flipkart grid Challenge</h2>
+              <p>The main task was to drop packages using the most optimal path, We had used <a href="https://github.com/PathPlanning/Continuous-CBS" target="_blank" rel="noopener">CBS</a> with minor changes to best suite our problem statement. We also used <a href="https://github.com/nobleo/tracking_pid" target="_blank" rel="noopener">Tracking PID</a> for tracing these trajectories and making it more general and robust to be used with other algorithms and systems.</p>
+              <p><p style="text-align:center;"><img style="width:600px;height:600px;" src="arena.jpg" alt=""></p></p>
+              <p align="center">
+              <i>Example of the arena in which it drops the package</i>
+              </p>
+              <p>The robot is now a developmental platform for other multiagent research at Indian Institute of Technology, Varanasi
+              The robot is now about to have minor upgrades for it be used in a more real world use case by addition of lidars and better on board computation.</p>
+              <p>A preliminary result of the path planning algorithm with package dropping can be seen below.</p>
+              <iframe src="https://drive.google.com/file/d/1NhuapFy1Y12LVFoKoIaRP3BYm-ReoEHW/preview" width="700" height="500"/>
+                  </div>
+              
+                  
+              
+              
+              
+              
+              
+              
+        </div>
+    </div> 
+</body>
+
+</html>
