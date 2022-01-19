@@ -12,13 +12,14 @@
 
 /* v2 and v3 footer */
 footer {
-  color: #8392a5;
+  /* color: #8392a5; */
   border-top-width: 1px !important;
   border-color: #8392a5;
+  background: slategray !important;
 }
 
 footer a {
-  color: #8392a5;
+  color: #f0ffff;
 }
 
 /* v2 and v3 news */
