@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang=en>
+
+<head>
+  <meta charset=utf-8>
+  <meta name=viewport content="width=device-width,initial-scale=1">
+  <meta http-equiv=x-ua-compatible content="ie=edge">
+  <link rel=icon href=../../fav3.jpeg type=image/gif>
+  <script
+    type=application/javascript>var doNotTrack=false;if(!doNotTrack){(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');ga('create','UA-167646412-8','auto');ga('send','pageview');}</script>
+  <link rel=stylesheet href=../../css/bootstrap.min.css media=all>
+  <link rel=stylesheet href=../../css/all.min.css media=all>
+  <link rel=stylesheet href=../../css/fontawesome.min.css media=all>
+  <link rel=stylesheet href=../../css/v3/darkmode.css media=all>
+  <style>
+    html {
+      scrollbar-width: thin;
+      scrollbar-color: #6c757d transparent
+    }
+
+    ::-webkit-scrollbar {
+      width: 5px
+    }
+
+    ::-webkit-scrollbar-track {
+      background: 0 0
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #6c757d
+    }
+  </style>
+  <link rel=stylesheet href=../../css/v3/navbar-footer.css>
+  <link rel=preconnect href=https://fonts.gstatic.com>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap"
+    rel=stylesheet>
+  <script src=../../js/popper.min.js></script>
+  <meta name=description content="Description of project">
+  <title>Dot-Bot</title>
+  <link href=../../css/v3/post.css rel=stylesheet>
+</head>
+
+<body class=text-dark>
+  <script src=../../js/jquery.slim.min.js></script>
+  <script src=../../js/bootstrap.min.js></script>
+  <div class=container>
+    <div>
+      <nav class="pt-3 navbar navbar-expand-lg navbar-light" data-aos=fade-down data-aos-easing=linear
+        data-aos-duration=500><a class=navbar-brand href=../.. /><img src=../../fav3.jpeg width=30 height=30
+          class="d-inline-block align-top">
+        harshmahesheka</a>
+        <button class="navbar-toggler border-0" type=button data-toggle=collapse data-target=#navbarNavDropdown
+          aria-controls=navbarNavDropdown aria-expanded=false aria-label="Toggle navigation">
+          <span class=navbar-toggler-icon></span></button>
+        <div class="collapse navbar-collapse" id=navbarNavDropdown>
+          <ul class="navbar-nav ml-auto text-center">
+            <li class="nav-item navbar-text"><a class="nav-link text-dark" href=../../#about aria-label=about>About</a>
+            </li>
+            <li class="nav-item navbar-text"><a class="nav-link text-dark" href=../../#Interests
+                aria-label=Interests>Interests</a></li>
+            <li class="nav-item navbar-text"><a class="nav-link text-dark" href=../../#education
+                aria-label=education>Education</a></li>
+            <li class="nav-item navbar-text"><a class="nav-link text-dark" href=../../#projects
+                aria-label=projects>Projects</a></li>
+            <li class="nav-item navbar-text"><a class="nav-link text-dark" href=../../#contact
+                aria-label=contact>Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div styel="align=center">
+      <div class="article-container pt-3">
+        <h1 style="font-weight: bold !important;">Multi Purpose Household Bot</h1>
+     
+
+      </div>
+      <div class="btn-links mb-3">
+
+        <a class="btn btn-outline-primary btn-page-header" href="https://github.com/harshmahesheka/Multi-Purpose-HouseHold-Bot"
+          target="_blank" rel="noopener">
+          <i class="fab fa-github mr-1"></i>
+          Code and Details
+        </a>
+      </div>
+    </div>
+    <div class="article-header article-container featured-image-wrapper mt-4 mb-4">
+      <div>
+        <p style="text-align:center;"><img style="width:800px;height:600px;" src="mp.png" alt=""
+            class="featured-image"></p>
+        <p style="text-align:center;"><i>fig 1: Mp-Bot</i></p>
+      </div>
+    </div>
+    <div style="font-size: large;" class="article-container">
+      <div class="article-style">
+        <p>A Household bot designed to help in day to day activites.It's a fully ROS integrated bot designed to  Vacuum floor,Autonomusly navigate,Detect threats,Monitor Baby etc..</p>
+        <p>We are curently working on building physcial hardware of the bot,creating an app to control it and Vaccum plugins for gazebo to simulate cleaning in gazebo.</p>
+        <p>The complete package including the plan can be found at <a
+            href="https://github.com/harshmahesheka/Multi-Purpose-HouseHold-Bot" target="_blank" rel="noopener">Dot-Bot</a>.</p>
+        <h2 style="font-weight: bold !important;" id="hd">Hardware Design</h2>
+        <p>We desgined our Bot on Solidwork with continous testing on Gazebo.We have performe multiple stress analysis to ensure it's durablity and Airflow simulation in Solidworks to ensure it's working and compability with Navigation sysytem. </p>
+ 
+        <p align="center"><img src="mps.png" style="height:550px; width:850px;" alt=""></p>
+        <p align="center"><i> fig 2: Solid Work Images</i></p>
+ 
+        <h2 style="font-weight: bold !important;" id="simulation">Robot Control And Navigation</h2>
+        <p>We will use a PID controller to control the wheels of the bot and a differential drive controller as a low level controller of the
+          bot.</p>
+        <p>We have implemented ROS Navigation Stack on our Bot to autonomously navigate
+          it through house. We will Gmappping SLam for map making,AMCL for
+          localization, teb_local_planner as local planner and A* based algorithm as
+          global planner
+        <p style="text-align:center;">
+          <img style="width:500px;height:400px;" src="mpn.png" alt="nAV-sTACK" class="center">
+        </p>
+        </p>
+        <p align="center">
+          <i>fig 3: Navigation Stack </i>
+        </p>
+        <h2 style="font-weight: bold !important;" id="f">Baby Monitoring and Threat Detection</h2>
+        <p>We have created a Baby Monitoring Algorithm through which bot follows the baby which is detected using YoloV3 Algorithm.We use same Algorithm to detect threts like knifes in the frame and if it's close to baby we trigger alarm.
+          We have also implemented face identification algorithm based on which bit greets known faces and beeps for unknown one's.
+        <p>
+        <p style="text-align:center;"><img style="width:400px;height:400px;" src="mpd.jpg" alt=""></p>
+        </p>
+        
+        <p align="center">
+          <i>fig 5:Person Detection Demo</i>
+        </p>
+        <br><br>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
