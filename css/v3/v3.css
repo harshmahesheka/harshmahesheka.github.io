@@ -25,7 +25,7 @@ a:hover {
 }
 .btn-intro {
   padding-left: 3%;
-  padding-bottom: 10%;
+  padding-bottom: 6%;
 }
 .social {
   padding-left: 5%;
@@ -51,12 +51,12 @@ a:hover {
   color: #f9fafc !important;
   border: 1px solid #007bff;
 }
-.intro {
+/*.intro {
   padding: 8% 0 8% 0;
-}
-.name-container {
+} */
+/* .name-container {
   padding-left: 15%;
-}
+} */
 .profile {
   padding: 1%;
   border: 1px solid #f9fafc;
@@ -96,8 +96,8 @@ a:hover {
   background-color: #dce6f1;
 }
 .about {
-  padding-top: 3% !important;
-  padding-bottom: 3% !important;
+  padding-top: 2% !important;
+  padding-bottom: 2% !important;
 }
 .about-content {
   padding-left: 10% !important;
@@ -158,6 +158,7 @@ a:hover {
 .content-pro-top {
   color: #3a3b3c !important;
   height: 80%;
+  /* font-weight: bold !important; */
 }
 .pro-github {
   color: #3a3b3c !important;
@@ -188,6 +189,7 @@ a:hover {
   .content-pro-top {
     height: 80%;
     color: #6c757d;
+    /* font-weight: bold !important; */
   }
   .card-text {
     color: #343a40;
@@ -204,8 +206,8 @@ a:hover {
   }
 }
 
-/* v3 experience */
-#experience {
+/* v3 Interests */
+#Interests {
 }
 #nav-pills-out {
   border-left: 1px solid #007bff;
@@ -334,18 +336,18 @@ a:hover {
   }
 }
 
-/* v3 Interests */
+/* v3 Achievements */
 .achievements-back {
-  background-color: #dce6f1;
+  background-color: #cad7e7;
 }
 .achiv-card:hover {
   filter: grayscale(100%);
 }
 .achiv-card {
-  height: 300px;
-  width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
+  height: 150px;
+  /* width: 100%; */
+  /* background-size: cover; */
+  /* background-repeat: no-repeat; */
   background-position: center center;
 }
 .achiv {
