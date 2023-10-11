@@ -33,23 +33,22 @@
 									<div class="article-style">
 										<br><br>
 									  <p>This is fully ROS integrated 4 DOF robotic arm, with a base that is capable of yaw motion and the other 3
-										DOF's are planar.It's main purpose is to sort cutlery like spoon,forks,chopsticks etc.This project was done
+										DOF's are planar. It's main purpose is to sort cutlery like spoon,forks,chopsticks etc. This project was done
 										in collaboration with NTU,Singapore. I worked on arm control for which I used move_it and ROS framework. Cutlery identification was done
 										using an on arm-camera and Deep Learning based Models.</p>
 									  <p>The complete package including the URDF and move_it files can be found at <a
 										  href="https://github.com/Robotics-Club-IIT-BHU/ntu-maerc/a1" target="_blank" rel="noopener">Cutlery
 										  Sorting Arm</a>.</p>
 									  <h2 style="font-weight: bold !important;" id="arm-control">Arm control</h2>
-									  <p>The arm control is a implementation of move_it planning framework on a custom URDF.Also we have used a
+									  <p>The arm control is a implementation of move_it planning framework on a custom URDF. Also we have used a
 										custom IK algorithm as there was no IK solver algorithm for 4 DOF arm in move_it</p>
 									  <p>A small demo is given beliow showing the working of arm control:</p>
 									  <p align="center"><iframe src="https://drive.google.com/file/d/1cGbHo7NkO0HRuz2-_trQoQoHL05KnxYI/preview" width="700"
 										height="500"></iframe></p>
 									  <p align="center"><i>fig 2: Short Demonstration Of Move_it</i></p>
 									  <ul>
-										<li>As you can see we provide end goal to move_it which then computes all possible paths and gives the
-										  shortest and most feasible path.This is then published to arm controllers ad hence the movement in gazebo.
-										</li>
+										As you can see we provide end goal to move_it which then computes all possible paths and gives the
+										shortest and most feasible path. This is then published to arm controllers ad hence the movement in gazebo.
 									  </ul>
 									  <h2 style="font-weight: bold !important;" id="simulation">Hardware Design and Object Identification</h2>
 									  <p>We have made a custom design using Solid Works and conducted multiple tests in simulators like
@@ -58,7 +57,7 @@
 											<img style="width:500px;height:500px;" src="images/csa_design.png" alt="CSA" class="center">
 										  </p>
 									  <p>We use Mask R-CNN, or Region-Based Convolutional Neural Network which is capable of achieving
-										state-of-the-art results on a range of object detection tasks.So,basically the model tells the positon and
+										state-of-the-art results on a range of object detection tasks. So,basically the model tells the positon and
 										type of object to ROS framework which then calculates start and end goal accordingly.
 									  <p style="text-align:center;">
 										<img style="width:500px;height:500px;" src="images/csa_g.png" alt="CSA" class="center">
