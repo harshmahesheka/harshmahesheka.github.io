@@ -1,128 +1,133 @@
 <!DOCTYPE HTML>
 <!--
-	Editorial by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+    Editorial by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html>
-	<head>
-		<title>Cutlery Sorting Arm</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cutlery Sorting Arm</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body class="is-preload">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+    <!-- Wrapper -->
+    <div id="wrapper">
 
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
+        <!-- Main -->
+        <div id="main">
+            <div class="inner">
 
-							<!-- Header -->
-								<header id="header">
-									<a href="index.html" class="logo"><strong>Cutlery Sorting Arm</strong></a>
-									<ul class="icons">
-										<li><a href="https://twitter.com/MaheshekaHarsh" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="https://www.linkedin.com/in/harsh-mahesheka-ab0725212/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
-										<li><a href="https://github.com/harshmahesheka" class="icon brands fa-github"><span class="label">Github</span></a></li>
-									</ul>
-								</header>
-								<div class="article-container">
-									<div class="article-style">
-										<br><br>
-									  <p>This is fully ROS integrated 4 DOF robotic arm, with a base that is capable of yaw motion and the other 3
-										DOF's are planar. It's main purpose is to sort cutlery like spoon,forks,chopsticks etc. This project was done
-										in collaboration with NTU,Singapore. I worked on arm control for which I used move_it and ROS framework. Cutlery identification was done
-										using an on arm-camera and Deep Learning based Models.</p>
-									  <p>The complete package including the URDF and move_it files can be found at <a
-										  href="https://github.com/Robotics-Club-IIT-BHU/ntu-maerc/a1" target="_blank" rel="noopener">Cutlery
-										  Sorting Arm</a>.</p>
-									  <h2 style="font-weight: bold !important;" id="arm-control">Arm control</h2>
-									  <p>The arm control is a implementation of move_it planning framework on a custom URDF. Also we have used a
-										custom IK algorithm as there was no IK solver algorithm for 4 DOF arm in move_it</p>
-									  <p>A small demo is given beliow showing the working of arm control:</p>
-									  <p align="center"><iframe src="https://drive.google.com/file/d/1cGbHo7NkO0HRuz2-_trQoQoHL05KnxYI/preview" width="700"
-										height="500"></iframe></p>
-									  <p align="center"><i>fig 2: Short Demonstration Of Move_it</i></p>
-									  <ul>
-										As you can see we provide end goal to move_it which then computes all possible paths and gives the
-										shortest and most feasible path. This is then published to arm controllers ad hence the movement in gazebo.
-									  </ul>
-									  <h2 style="font-weight: bold !important;" id="simulation">Hardware Design and Object Identification</h2>
-									  <p>We have made a custom design using Solid Works and conducted multiple tests in simulators like
-										Gazebo,Pybullet for ensuring it's physical durablity.</p>
-										<p style="text-align:center;">
-											<img style="width:500px;height:500px;" src="images/csa_design.png" alt="CSA" class="center">
-										  </p>
-									  <p>We use Mask R-CNN, or Region-Based Convolutional Neural Network which is capable of achieving
-										state-of-the-art results on a range of object detection tasks. So,basically the model tells the positon and
-										type of object to ROS framework which then calculates start and end goal accordingly.
-									  <p style="text-align:center;">
-										<img style="width:500px;height:500px;" src="images/csa_g.png" alt="CSA" class="center">
-									  </p>
-									  </p>
-									  <p align="center">
-										<i>fig 3:Knife Detection</i>
-									  </p>
-									</div>
-								  </div>
+                <!-- Header -->
+                <header id="header">
+                    <a href="index.html" class="logo"><strong>Cutlery Sorting Arm</strong></a>
+                    <ul class="icons">
+                        <li><a href="https://twitter.com/MaheshekaHarsh" class="icon brands fa-twitter" aria-label="Twitter"><span class="label">Twitter</span></a></li>
+                        <li><a href="https://www.linkedin.com/in/harsh-mahesheka-ab0725212/" class="icon brands fa-linkedin" aria-label="LinkedIn"><span class="label">LinkedIn</span></a></li>
+                        <li><a href="https://github.com/harshmahesheka" class="icon brands fa-github" aria-label="GitHub"><span class="label">GitHub</span></a></li>
+                    </ul>
+                </header>
 
-								</div>
-							</div>
+                <!-- Article Container -->
+                <div class="article-container">
+                    <div class="article-style">
 
-				<!-- Sidebar -->
-					<div id="sidebar">
-						<div class="inner">
-<!-- 
-							Search
-								<section id="search" class="alt">
-									<form method="post" action="#">
-										<input type="text" name="query" id="query" placeholder="Search" />
-									</form>
-								</section> -->
+                        <section>
+							<br>
+                            <p>
+                                The Cutlery Sorting Arm is a fully ROS-integrated 4-DOF robotic arm designed to sort various types of cutlery, including spoons, forks, and chopsticks. The arm features a base capable of yaw motion, while the other three degrees of freedom (DOFs) are planar. This project was developed in collaboration with NTU, Singapore. My primary role involved arm control using MoveIt and the ROS framework. Cutlery identification is achieved through an on-arm camera combined with deep learning-based models. 
+								The complete package, including the URDF and MoveIt configurations, is available on <a href="https://github.com/Robotics-Club-IIT-BHU/ntu-maerc/a1" target="_blank" rel="noopener">GitHub</a>.
+                            </p>
+                        </section>
 
-							<!-- Menu -->
-								<nav id="menu">
-									<header class="major">
-										<h2>Menu</h2>
-									</header>
-									<ul>
-										<li><a href="index.html">Homepage</a></li>
-										<li><a href="generic.html">Experiences</a></li>
-										<li><a href="elements.html">Projects</a></li>
-									</ul>
-								</nav>
+                        <section id="arm-control">
+                            <h2>Arm Control</h2>
+                            <p>
+                                The arm control system implements the MoveIt planning framework on a custom URDF. Additionally, a custom inverse kinematics (IK) algorithm was developed, as MoveIt does not provide an IK solver for a 4-DOF arm.
+                            </p>
+                            <p>
+                                Below is a short demonstration showcasing the functionality of the arm control system:
+                            </p>
+                            <div style="text-align:center;">
+                                <iframe src="https://drive.google.com/file/d/1cGbHo7NkO0HRuz2-_trQoQoHL05KnxYI/preview" width="700" height="500" allowfullscreen></iframe>
+                                <p><em>Figure 2: Short Demonstration of MoveIt</em></p>
+                            </div>
+                            <ul>
+                                <li>
+                                    The system provides an end goal to MoveIt, which computes all possible paths and selects the shortest and most feasible one. This path is then published to the arm controllers, resulting in movement within Gazebo.
+                                </li>
+                            </ul>
+                        </section>
 
-							<!-- Section -->
-							<section>
-								<header class="major">
-									<h2>Contact Me</h2>
-								</header>
-								<!-- <p>Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin sed aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p> -->
-								<ul class="contact">
-									<li class="icon solid fa-envelope">harsh.mahesheka.eee20@iitbhu.ac.in</li>
-									<li class="icon solid fa-phone">+91 9470292105</li>
-								</ul>
-							</section>
+                        <section id="simulation">
+                            <h2>Hardware Design and Object Identification</h2>
+                            <p>
+                                We developed a custom design using SolidWorks and conducted multiple tests in simulators like Gazebo and PyBullet to ensure physical durability.
+                            </p>
+                            <div style="text-align:center;">
+                                <img src="images/csa_design.png" alt="Cutlery Sorting Arm Design" style="width:500px; height:500px;" />
+                                <p><em>Figure 3: Cutlery Sorting Arm Design</em></p>
+                            </div>
+                            <p>
+                                For object identification, we utilized Mask R-CNN (Region-Based Convolutional Neural Network), which achieves state-of-the-art results in various object detection tasks. The model determines the position and type of each object, which the ROS framework then uses to calculate the start and end goals accordingly.
+                            </p>
+                            <div style="text-align:center;">
+                                <img src="images/csa_g.png" alt="Knife Detection" style="width:500px; height:500px;" />
+                                <p><em>Figure 4: Knife Detection</em></p>
+                            </div>
+                        </section>
 
-							<!-- Footer -->
-							<footer id="footer">
-								<p class="copyright">&copy; Harsh Mahesheka. All rights reserved.</p>
-							</footer>
+                    </div>
+                </div>
 
-						</div>
-					</div>
+            </div>
+        </div>
 
-			</div>
+        <!-- Sidebar -->
+        <div id="sidebar">
+            <div class="inner">
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+                <!-- Menu -->
+                <nav id="menu">
+                    <header class="major">
+                        <h2>Menu</h2>
+                    </header>
+                    <ul>
+                        <li><a href="index.html">Homepage</a></li>
+                        <li><a href="generic.html">Experiences</a></li>
+                        <li><a href="elements.html">Projects</a></li>
+                    </ul>
+                </nav>
 
-	</body>
+                <!-- Contact Section -->
+                <section>
+                    <header class="major">
+                        <h2>Contact Me</h2>
+                    </header>
+                    <ul class="contact">
+                        <li class="icon solid fa-envelope"><a href="mailto:harsh.mahesheka.eee20@iitbhu.ac.in">harsh.mahesheka.eee20@iitbhu.ac.in</a></li>
+                        <li class="icon solid fa-phone"><a href="tel:+919470292105">+91 9470292105</a></li>
+                    </ul>
+                </section>
+
+                <!-- Footer -->
+                <footer id="footer">
+                    <p class="copyright">&copy; Harsh Mahesheka. All rights reserved.</p>
+                </footer>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
 </html>

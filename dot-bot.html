@@ -1,162 +1,149 @@
 <!DOCTYPE HTML>
 <!--
-	Editorial by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+    Editorial by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Mutil Agent Pickup and Delivery System</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+    <head>
+        <title>Multi Agent Pickup and Delivery System</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+    </head>
+    <body class="is-preload">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+        <!-- Wrapper -->
+        <div id="wrapper">
 
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
+            <!-- Main -->
+            <div id="main">
+                <div class="inner">
 
-							<!-- Header -->
-								<header id="header">
-									<a href="index.html" class="logo"><strong>Mutil Agent Pickup and Delivery System</strong></a>
-									<ul class="icons">
-										<li><a href="https://twitter.com/MaheshekaHarsh" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="https://www.linkedin.com/in/harsh-mahesheka-ab0725212/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
-										<li><a href="https://github.com/harshmahesheka" class="icon brands fa-github"><span class="label">Github</span></a></li>
-									</ul>
-								</header>
+                    <!-- Header -->
+                    <header id="header">
+                        <a href="index.html" class="logo"><strong>Multi Agent Pickup and Delivery System</strong></a>
+                        <ul class="icons">
+                            <li><a href="https://twitter.com/MaheshekaHarsh" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                            <li><a href="https://www.linkedin.com/in/harsh-mahesheka-ab0725212/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                            <li><a href="https://github.com/harshmahesheka" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+                        </ul>
+                    </header>
 
+                    <!-- Article Container -->
+                    <div class="article-container">
+                        <div class="article-style">
+							<br><br>
+                            <!-- <h1>Multi Agent Pickup and Delivery System</h1> -->
 
-								<div style="font-size: large;" class="article-container">
-									<div class="article-style">
-										<br><br>
-									  <p>This is fully ROS integrated robot, which can be used in various purposes our main use case was to test out
-										multiagent algorithms. We used it to take part in the national level competition, FlipKart Grid 3.0 Robotics
-										challenge 2021.</p>
-									  <p>We worked on building the platform and the integrating ROS with the following robot. The localization was
-										done using a Apriltag_ros and a array of cameras. Also worked on implementing autonomously navigating in the
-										environment and computing the optimal path while considering other robots in the arena.</p>
-									  <p>The complete package including the controller and the planner can be found at <a
-										  href="https://github.com/Robotics-Club-IIT-BHU/Dot-Bot" target="_blank" rel="noopener">Dot-Bot</a>.</p>
-									  <h2 style="font-weight: bold !important;" id="robot-control">Robot control</h2>
-									  <p>The robots control architecture is a state-of-the-art implementation using a microprocessor and a
-										microcontroller along with sensor fusion for position estimation with external cameras for deteciton of
-										apriltags that denote the robot.</p>
-									  <p>The exact control architecture is briefly given in the below image which later is elaborated in 3 bulletin
-										points</p>
-									  <p align="center"><img src="images/dotbot_control.png" style="height:600px; width:600px;" alt=""></p>
-									  <p align="center"><i> fig 2: Control Mechanism</i></p>
-									  <ul>
-										<li>Communication: Communication between the robot and the remote PC is done through <a
-											href="http://wiki.ros.org/ROS/Tutorials/MultipleMachines" target="_blank" rel="noopener">Networking of
-											multiple machines</a>. The communication between the microprocessor and the Microcontroller is done
-										  through UART at a baudrate of 2000000.</li>
-										<li>Pose Estimation: Pose estimation is done through using Encoder and Imu fusion for odometry(i.e., odom to
-										  base frame). Then we use and external camera for ground truth (i.e., map to base frame).</li>
-										<li>Controller: We have used a simple velocity based 3 wheel omni drive to control the robot. The omni drive
-										  node works at 100 hz on the raspberrypi and the micro controller controls individual motors to trace the
-										  given velocity this made it very easy to transfer from the simulation to real world.</li>
-									  </ul>
-									  <p>The whole implementation of the control architecture can be found at <a
-										  href="https://github.com/Robotics-Club-IIT-BHU/Swarm-Bot-Hardware" target="_blank"
-										  rel="noopener">Swarm-bot-hardware</a>.</p>
-									  <h2 style="font-weight: bold !important;" id="simulation">Simulation</h2>
-									  <p>We have setup the whole simulation for these robots as we have modelled the real robot. We have also added
-										the 2DOF droppers that can be seen on top of each robot.</p>
-									  <p>We have setup Rviz to visualize the robots both in simulation and hardware.
-									  <p style="text-align:center;">
-										<img style="width:500px;height:400px;" src="images/gazebo.png" alt="Dot-Bot" class="center">
-									  </p>
-									  </p>
-									  <p align="center">
-										<i>fig 3: An demo of the robot in gazebo</i>
-									  </p>
-									  <h2 style="font-weight: bold !important;" id="flipkart-grid-challenge">Flipkart grid Challenge</h2>
-									  <p>The main task was to drop packages using the most optimal path, We had used <a
-										  href="https://github.com/PathPlanning/Continuous-CBS" target="_blank" rel="noopener">CBS</a> with minor
-										changes to best suite our problem statement. We also used <a href="https://github.com/nobleo/tracking_pid"
-										  target="_blank" rel="noopener">Tracking PID</a> for tracing these trajectories and making it more general
-										and robust to be used with other algorithms and systems.</p>
-									  <p>
-									  <p style="text-align:center;"><img style="width:400px;height:400px;" src="images/arena.jpg" alt=""></p>
-									  </p>
-									  <p align="center">
-										<i>fig 4:Example of the arena in which it drops the package</i>
-									  </p>
-									  <p>The robot is now a developmental platform for other multiagent research at Indian Institute of Technology,
-										Varanasi.
-										The robot is now about to have minor upgrades for it be used in a more real world use case by addition of
-										lidars and better on board computation.</p>
-									  <p>A preliminary result of the path planning algorithm with package dropping can be seen below.</p>
-									  <p align="center">
-										<iframe src="https://drive.google.com/file/d/1NhuapFy1Y12LVFoKoIaRP3BYm-ReoEHW/preview" width="500"
-										  height="500"></iframe>
-									  </p>
-									  <p align="center">
-										<i>fig 5: Short Demonstration Of Project</i>
-									  </p>
-									  <br><br>
-									</div>
-								  </div>
+                            <section>
+                                <p>
+                                    Our system features a fully ROS-integrated robot designed for versatile applications, with a primary focus on testing multi-agent algorithms. This system was developed to participate in the national-level FlipKart Grid 3.0 Robotics Challenge 2021.
+                                </p>
+                                <p>
+                                    We built the platform and integrated ROS with the robot, utilizing Apriltag_ros and an array of cameras for localization. Additionally, we implemented autonomous navigation and optimal path computation, taking into account the presence of other robots in the arena. The complete package, including the controller and planner, is available on our <a href="https://github.com/Robotics-Club-IIT-BHU/Dot-Bot" target="_blank" rel="noopener">Dot-Bot GitHub repository</a>.
+                                </p>
+                            </section>
 
-								</div>
-							</div>
+                            <section id="robot-control">
+                                <h2>Robot Control</h2>
+                                <p>
+                                    The robot's control architecture employs a state-of-the-art implementation using both a microprocessor and a microcontroller. Sensor fusion techniques are utilized for precise position estimation, complemented by external cameras that detect Apriltags marking the robot's position. The control architecture is illustrated below and further detailed in the following points:
+                                </p>
+                                <div class="image-container" style="text-align: center;">
+                                    <img src="images/dotbot_control.png" alt="Control Mechanism" style="max-width: 100%; height: auto;" />
+                                    <p><em>Figure 1: Control Mechanism</em></p>
+                                </div>
+                                <ul>
+                                    <li><strong>Communication:</strong> Communication between the robot and the remote PC is established through <a href="http://wiki.ros.org/ROS/Tutorials/MultipleMachines" target="_blank" rel="noopener">ROS networking for multiple machines</a>. The connection between the microprocessor and the microcontroller utilizes UART at a baud rate of 2,000,000.</li>
+                                    <li><strong>Pose Estimation:</strong> Pose estimation combines encoder and IMU data for odometry (odom to base frame) and employs external cameras for ground truth mapping (map to base frame).</li>
+                                    <li><strong>Controller:</strong> A velocity-based three-wheel omni-drive system operates at 100 Hz on the Raspberry Pi, with the microcontroller managing individual motors to execute the desired velocities. This setup facilitates seamless transition from simulation to real-world applications.</li>
+                                </ul>
+                                <p>
+                                    The complete implementation of the control architecture is available on our <a href="https://github.com/Robotics-Club-IIT-BHU/Swarm-Bot-Hardware" target="_blank" rel="noopener">Swarm-Bot-Hardware GitHub repository</a>.
+                                </p>
+                            </section>
 
-				<!-- Sidebar -->
-					<div id="sidebar">
-						<div class="inner">
-<!-- 
-							Search
-								<section id="search" class="alt">
-									<form method="post" action="#">
-										<input type="text" name="query" id="query" placeholder="Search" />
-									</form>
-								</section> -->
+                            <section id="simulation">
+                                <h2>Simulation</h2>
+                                <p>
+                                    We have meticulously set up a comprehensive simulation environment that mirrors the real-world robot. This includes modeling the robot with 2DOF droppers visible atop each unit. Additionally, we configured Rviz to visualize the robots both in simulation and hardware environments.
+                                </p>
+                                <div class="image-container" style="text-align: center;">
+                                    <img src="images/gazebo.png" alt="Gazebo Simulation" style="max-width: 100%; height: auto;" />
+                                    <p><em>Figure 2: Robot Simulation in Gazebo</em></p>
+                                </div>
+                            </section>
 
-							<!-- Menu -->
-								<nav id="menu">
-									<header class="major">
-										<h2>Menu</h2>
-									</header>
-									<ul>
-										<li><a href="index.html">Homepage</a></li>
-										<li><a href="generic.html">Experiences</a></li>
-										<li><a href="elements.html">Projects</a></li>
-									</ul>
-								</nav>
+                            <section id="flipkart-grid-challenge">
+                                <h2>FlipKart Grid Challenge</h2>
+                                <p>
+                                    The primary objective was to optimize package delivery paths. We employed the <a href="https://github.com/PathPlanning/Continuous-CBS" target="_blank" rel="noopener">Continuous-CBS</a> algorithm, making minor modifications to better suit our specific problem statement. Additionally, we integrated a <a href="https://github.com/nobleo/tracking_pid" target="_blank" rel="noopener">Tracking PID</a> controller to enhance trajectory tracing, ensuring robustness and compatibility with other algorithms and systems.
+                                </p>
+                                <div class="image-container" style="text-align: center;">
+                                    <img src="images/arena.jpg" alt="Arena Example" style="max-width: 100%; height: auto;" />
+                                    <p><em>Figure 3: Arena Layout for Package Delivery</em></p>
+                                </div>
+                                <p>
+                                    Our robot serves as a developmental platform for multi-agent research at the Indian Institute of Technology, Varanasi. Future enhancements include integrating LiDAR sensors and upgrading onboard computation to facilitate more real-world applications.
+                                </p>
+                                <p>
+                                    Below is a preliminary result showcasing the path planning algorithm with package dropping capabilities:
+                                </p>
+                                <div class="video-container" style="text-align: center;">
+                                    <iframe src="https://drive.google.com/file/d/1kTual2lJ21zyyMiRmZJK0oFnMKJsHgRn/preview" width="1000" height="700" allowfullscreen></iframe>
+                                    <p><em>Figure 4: Project Demonstration</em></p>
+                                </div>
+                            </section>
 
-							<!-- Section -->
-							<section>
-								<header class="major">
-									<h2>Contact Me</h2>
-								</header>
-								<!-- <p>Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin sed aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p> -->
-								<ul class="contact">
-									<li class="icon solid fa-envelope">harsh.mahesheka.eee20@iitbhu.ac.in</li>
-									<li class="icon solid fa-phone">+91 9470292105</li>
-								</ul>
-							</section>
+                        </div>
+                    </div>
 
-							<!-- Footer -->
-							<footer id="footer">
-								<p class="copyright">&copy; Harsh Mahesheka. All rights reserved.</p>
-							</footer>
+                </div>
+            </div>
 
-						</div>
-					</div>
+            <!-- Sidebar -->
+            <div id="sidebar">
+                <div class="inner">
+                    <!-- Menu -->
+                    <nav id="menu">
+                        <header class="major">
+                            <h2>Menu</h2>
+                        </header>
+                        <ul>
+                            <li><a href="index.html">Homepage</a></li>
+                            <li><a href="generic.html">Experiences</a></li>
+                            <li><a href="elements.html">Projects</a></li>
+                        </ul>
+                    </nav>
 
-			</div>
+                    <!-- Contact Section -->
+                    <section>
+                        <header class="major">
+                            <h2>Contact Me</h2>
+                        </header>
+                        <ul class="contact">
+                            <li class="icon solid fa-envelope"><a href="mailto:harsh.mahesheka.eee20@iitbhu.ac.in">harsh.mahesheka.eee20@iitbhu.ac.in</a></li>
+                            <li class="icon solid fa-phone"><a href="tel:+919470292105">+91 9470292105</a></li>
+                        </ul>
+                    </section>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+                    <!-- Footer -->
+                    <footer id="footer">
+                        <p class="copyright">&copy; 2024 Harsh Mahesheka. All rights reserved.</p>
+                    </footer>
 
-	</body>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+
+    </body>
 </html>
